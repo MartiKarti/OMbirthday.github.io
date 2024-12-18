@@ -58,7 +58,8 @@
         <h1>Birthday Book</h1>
         <h2>Oli i Martyny</h2>
         <p>Podziel się swoimi życzeniami, wspomnieniami lub zdjęciami i stwórzmy razem niezapomnianą pamiątkę</p>
-        <form action="#" method="POST" enctype="multipart/form-data">
+        <!-- Formularz z atrybutem data-netlify -->
+        <form name="birthday-form" method="POST" data-netlify="true" enctype="multipart/form-data">
             <label for="name">Twoje imię i nazwisko</label>
             <input type="text" id="name" name="name" placeholder="Wpisz swoje imię" required>
 
@@ -76,3 +77,4 @@
     </div>
 </body>
 </html>
+
