@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Book Ola i Martyna</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #FFB6C1;
+        }
+        h2 {
+            text-align: center;
+            color: #FFB6C1;
+            margin-top: 0;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #FFB6C1;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #FF69B4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Birthday Book</h1>
+        <h2>Oli i Martyny</h2>
+        <p>Podziel się swoimi życzeniami, wspomnieniami lub zdjęciami i stwórzmy razem niezapomnianą pamiątkę</p>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <label for="name">Twoje imię i nazwisko</label>
+            <input type="text" id="name" name="name" placeholder="Wpisz swoje imię" required>
+
+            <label for="wishes">Twoje życzenia lub wspomnienia</label>
+            <textarea id="wishes" name="wishes" rows="5" placeholder="Wpisz swoje życzenia" required></textarea>
+
+            <label for="file">Załącz zdjęcie lub filmik</label>
+            <input type="file" id="file" name="file" accept="image/*,video/*">
+
+            <label for="comments">Chcesz dodać coś jeszcze? (opcjonalne)</label>
+            <textarea id="comments" name="comments" rows="3" placeholder="Dodatkowe komentarze"></textarea>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </div>
+</body>
+</html>
